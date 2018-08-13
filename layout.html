@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
  <head>
-     
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
       
-   div.container {
-      border: 1px solid black;
+   * {
+    box-sizing: border-box;
    }
       
-   .titulo {
+      
+   .container {
+      border: 1px solid black;
+      clear: both;
+       
+   }
+      
+   .col-titulo {
       color: #fff;
       padding: 15px;
       background-color: darkslategrey;
@@ -27,14 +34,14 @@
       left: 0px;
    } 
       
-   .navegacionderecha {
+   .col-navegacionderecha {
       float: right;
       max-width: 150px;
       margin: 0;
       padding: 20px;
    }
       
-   .navegacionizquierda {
+   .col-navegacionizquierda {
       float: left;
       max-width: 150px;
       margin: 0;
@@ -50,14 +57,26 @@
       text-decoration: none;
    }
 
-   article {
+   .col-articulo {
        margin-left: 150px;
        margin-right: 150px;
        border-left: 1px solid gray;
        border-right: 1px solid gray;
-       padding: 10px;
+       padding-left: 10px;
+       padding-bottom: 30px;
        overflow: hidden;
    }
+      
+   /*@media only screen and (max-width: 412px) {
+    /* For mobile phones: */
+    /*[class *="col"] {
+        width: 100%;
+        clear: both;
+        padding: 15px;
+    }
+}
+   
+   
       
   </style>
  </head>
@@ -66,11 +85,11 @@
 
  <div class="container">
 
-  <header class="titulo">
+  <header class="col-titulo">
    <h1>Provincias Argentinas</h1>
   </header>
   
-  <nav class="navegacionizquierda">
+  <nav class="col-navegacionizquierda">
    <ul>
     <li><a href="#">Corrientes</a></li>
     <li><a href="#">Chaco</a></li>
@@ -78,7 +97,7 @@
    </ul>
   </nav>
   
-  <nav class="navegacionderecha">
+  <nav class="col-navegacionderecha">
    <ul>
     <li><a href="#">Misiones</a></li>
     <li><a href="#">Entre Rios</a></li>
@@ -86,7 +105,7 @@
    </ul>
   </nav>
 
-  <article class="articulo">
+  <article class="col-articulo">
    <h1>Corrientes</h1>
    <p>Corrientes o Taragüí (nombre oficial, histórico, constitucional y de uso habitual en guaraní que hace referencia a la ciudad en cuestión) es una ciudad de Argentina, capital y principal centro social y económico de la provincia homónima. Fundada el 3 de abril de 1588 es la ciudad más antigua del Nordeste argentino. Está situada a orillas de un recodo del río Paraná, distante 50 km aguas abajo de la confluencia con el río Paraguay, aproximadamente 1150 km aguas arriba de su desembocadura en el Río de la Plata. Junto a los poblados aledaños conforma el aglomerado urbano Gran Corrientes.</p>
 
